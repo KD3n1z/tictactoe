@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="../tsbuild/www/index.js"></script>
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <span>Tic Tac Toe</span>
+            <span id="status">loading...</span>
+        </header>
+        <content>
+            <div id="gameboard">
+                <button onclick="makeMove(0, 0)"></button>
+                <button onclick="makeMove(0, 1)"></button>
+                <button onclick="makeMove(0, 2)"></button>
+                <button onclick="makeMove(1, 0)"></button>
+                <button onclick="makeMove(1, 1)"></button>
+                <button onclick="makeMove(1, 2)"></button>
+                <button onclick="makeMove(2, 0)"></button>
+                <button onclick="makeMove(2, 1)"></button>
+                <button onclick="makeMove(2, 2)"></button>
+            </div>
+            <div id="btns">
+                <button onclick="newGame()">New Game</button>
+                <button onclick="changeFirstPlayer(this)">You start the game</button>
+            </div>
+        </content>
+        <footer>
+            <span>developed by
+                <span class="link" onclick="shell.openExternal('https://github.com/KD3n1z/')">kd3n1z</span>
+                with
+                <span class="link" onclick="shell.openExternal('https://www.electronjs.org/')">electron</span>
+            </span>
+        </footer>
+    </div>
+</body>
+</html>

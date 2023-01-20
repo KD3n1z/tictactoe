@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700;800&display=swap');
+
+html,
+body {
+    background-color: rgb(160, 241, 255);
+    color: rgb(0, 0, 0);
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    user-select: none;
+    text-align: center;
+    box-sizing: border-box;
+    font-weight: 700;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+header,
+footer {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 20px 0 20px;
+    border-left: solid 4px black;
+    border-right: solid 4px black;
+    background-color: rgb(123, 132, 255);
+    box-shadow: -5px 5px black;
+    box-shadow: -5px 0px black;
+}
+header {
+    font-size: 1.6em;
+    border-bottom: solid 4px black;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+footer {
+    border-top: solid 4px black;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#status {
+    font-size: .7rem;
+}
+
+content {
+    background-color: rgb(67 223 253);
+    border: solid 4px black;
+    border-radius: 15px;
+    box-shadow: -5px 5px black;
+    height: 100%;
+    margin: 0 20px 5px 20px;
+    padding: 8px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+    gap: 8px;
+}
+
+#gameboard {
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+#btns {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#btns>button{
+    font-size: 1.5rem;
+}
+
+button {
+    text-transform: uppercase;
+    background-color: rgb(123, 132, 255);
+    border: 2px solid black;
+    border-radius: 7px;
+    box-shadow: -2px 2px black;
+    font-size: 1.8em;
+    padding: 3px;
+    transition: ease-in-out .1s;
+}
+
+button:enabled:active {
+    box-shadow: none;
+    transform: translate(-2px, 2px);
+}
+
+.link {
+    text-decoration: underline;
+}
