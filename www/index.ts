@@ -4,6 +4,10 @@ var board: number[][];
 
 var playerIsFirst: boolean = true;
 
+function openUrl(url: string): void {
+    shell.openExternal(url);
+}
+
 function cloneBoard(array): number[][] {
     return [
         [...array[0]],

@@ -2,5 +2,5 @@
   "compilerOptions": {
     "outDir": "tsbuild"
   },
-  "exclude": [ "node_modules" ] 
+  "exclude": [ "node_modules", "out", "tsbuild" ] 
 }
