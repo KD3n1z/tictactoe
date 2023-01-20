@@ -1,8 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700;800&display=swap');
+@font-face {
+    font-family: 'Open Sans';
+    src: url("fonts/OpenSans-Bold.ttf");
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Nunito';
+    src: url("fonts/Nunito-Black.ttf");
+    font-weight: 900;
+}
+
+:root{
+    --bg-color: #f2e9e4;
+    --content-color: #c9ada7;
+    --button-color: #9a8c98;
+}
 
 html,
 body {
-    background-color: rgb(160, 241, 255);
+    background-color: var(--bg-color);
     color: rgb(0, 0, 0);
     margin: 0;
     font-family: 'Open Sans', sans-serif;
@@ -35,9 +50,7 @@ footer {
     margin: 0 20px 0 20px;
     border-left: solid 4px black;
     border-right: solid 4px black;
-    background-color: rgb(123, 132, 255);
-    box-shadow: -5px 5px black;
-    box-shadow: -5px 0px black;
+    background-color: var(--content-color);
 }
 header {
     font-size: 1.6em;
@@ -56,10 +69,10 @@ footer {
 }
 
 content {
-    background-color: rgb(67 223 253);
+    background-color: var(--content-color);
     border: solid 4px black;
     border-radius: 15px;
-    box-shadow: -5px 5px black;
+    /*box-shadow: -5px 5px black;*/
     height: 100%;
     margin: 0 20px 5px 20px;
     padding: 8px;
@@ -76,6 +89,10 @@ content {
     grid-template-rows: repeat(3, 1fr);
 }
 
+#gameboard>button {
+    font-family: 'Nunito', monospace;
+}
+
 #btns {
     display: flex;
     flex-direction: column;
@@ -88,7 +105,7 @@ content {
 
 button {
     text-transform: uppercase;
-    background-color: rgb(123, 132, 255);
+    background-color: var(--button-color);
     border: 2px solid black;
     border-radius: 7px;
     box-shadow: -2px 2px black;
@@ -104,4 +121,5 @@ button:enabled:active {
 
 .link {
     text-decoration: underline;
+    cursor: pointer;
 }

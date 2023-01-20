@@ -4,8 +4,8 @@ const createWindow = () => {
     const win = new BrowserWindow({
         width: 400,
         height: 600,
-        minWidth: 320,
-        minHeight: 400,
+        minWidth: 360,
+        minHeight: 500,
         autoHideMenuBar: true,
         webPreferences: {
             nodeIntegration: true,
