@@ -1,16 +1,26 @@
 {
   "name": "tic-tac-toe",
   "version": "1.0.0",
-  "description": "",
+  "description": "my first electron.js project",
   "main": "tsbuild/app.js",
   "scripts": {
     "build": "tsc",
-    "start": "electron ."
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
   },
   "author": "KD3n1z",
   "license": "MIT",
   "devDependencies": {
+    "@electron-forge/cli": "^6.0.4",
+    "@electron-forge/maker-deb": "^6.0.4",
+    "@electron-forge/maker-rpm": "^6.0.4",
+    "@electron-forge/maker-squirrel": "^6.0.4",
+    "@electron-forge/maker-zip": "^6.0.4",
     "electron": "^22.0.3",
     "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0"
   }
 }
